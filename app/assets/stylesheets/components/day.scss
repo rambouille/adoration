@@ -1,0 +1,104 @@
+@import '../colors.scss';
+
+.calendar {
+  border-color: black;
+  border: solid;
+  border-width: 0.5px;
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.first-column {
+  background-color: white;
+  width: 50px;
+}
+
+.cell {
+  border-color: black; 
+  border-width: 0.5px;
+  border-style: solid;
+}
+
+.empty-line {
+  height: 30px;
+  margin-bottom: 0px;
+}
+
+.hours {
+  position: relative;
+}
+
+.hour {
+  position: absolute;
+  width: 100%;
+  font-size: 0.8em;
+  padding: 2px;
+  text-align: center;
+
+  p {
+    opacity: 0.7;
+  }
+}
+
+.days {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  flex-grow: 1;
+}
+
+.day {
+  margin: 0px;
+}
+
+.day-title {
+  height: 30px;
+  margin-bottom: 0;
+  background: white;
+  opacity: 0.7;
+  p {
+    padding-left: 8px;
+    margin-bottom: 0;
+}
+  .menu-icon {
+    padding-right: 8px;
+    height: 30px;
+    opacity: 0.6;
+  }
+}
+
+.day-openings {
+  height: 360px;
+  position: relative;
+}
+
+.day-openings .event {
+  position: absolute;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 100%;
+  text-align: center;
+}
+
+.day-openings .opening {
+  background-color: $color-blue;
+  box-shadow: 2px 2px 8px #aaa;
+}
+
+.day-openings .empty_slot {
+  background-color: $color-gray-light;
+}
+
+.centered {
+  display: block;
+  margin: auto;
+}
+
+.day-openings .opening p {
+  margin-bottom: 0px;
+}
+
+.day-openings .opening .weekly-icon {
+  position: absolute;
+  top: -4px;
+  right: 0px;
+}

@@ -1,0 +1,23 @@
+.card-background {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.white-card {
+  background-color: white;
+  border-radius: 12px;
+  margin: 5em;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  opacity: 0.9;
+}
+
+.white-card-content {
+  padding: 24px;
+
+}
+
+.white-card h2 {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}

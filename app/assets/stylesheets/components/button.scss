@@ -1,0 +1,62 @@
+@import '../colors.scss';
+
+.button-white {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 8px 8px;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+.button-white:hover {
+  color: white;
+  background-color: $color-blue;
+  opacity: 1;
+  border-color: white;
+}
+
+.button-rounded {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px #aaa;
+  text-align: center;
+  font-size: 2em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: white;
+  border: 1px solid white;
+  font-size: 1em;
+}
+
+.button-rounded.blue {
+  background-color: $color-blue;
+}
+
+.button-rounded.gray {
+  background-color: $color-gray-light;
+  fill: black;
+  border: 1px solid black;
+}
+
+.button-rounded.gray:hover {
+  background-color: $color-blue;
+  fill: white;
+  border: 1px solid white;
+}
+
+
+.button-rounded.big {
+  width: 48px;
+  height: 48px;
+}
+
+.button-rounded.blue:hover {
+  background-color: white;
+  opacity: 1;
+  border-color: $color-blue;
+  fill: $color-blue;
+}
